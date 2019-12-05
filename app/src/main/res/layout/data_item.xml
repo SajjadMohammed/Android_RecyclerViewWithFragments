@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cardMaxElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:contentPadding="5dp"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/dataId"
+        android:hint="Id"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dataName"
+        android:hint="fullName"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/dataId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dataAge"
+        android:hint="Age"
+        android:textSize="20sp"
+        android:layout_below="@id/dataId"
+        android:layout_toRightOf="@id/dataName"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
